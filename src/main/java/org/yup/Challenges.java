@@ -1,4 +1,5 @@
 package org.yup;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 public class Challenges {
     public String greeting(String name, int age) {
@@ -30,7 +31,8 @@ public class Challenges {
 
         }
     }
-    public int addTwoNumbers(){
+
+    public int addTwoNumbers() {
         Scanner theScanner = new Scanner(System.in);
 
         System.out.print("enter number 1");
@@ -40,6 +42,7 @@ public class Challenges {
         return number1 + number2;
 
     }
+
     public int subtractTwoNumbers() {
         Scanner theScanner = new Scanner(System.in);
 
@@ -50,7 +53,7 @@ public class Challenges {
         return number1 - number2;
     }
 
-    public int multiplyTwoNumbers(){
+    public int multiplyTwoNumbers() {
         Scanner theScanner = new Scanner(System.in);
         System.out.println("enter number 1");
         int number1 = theScanner.nextInt();
@@ -59,7 +62,7 @@ public class Challenges {
         return number1 * number2;
     }
 
-    public int interactiveCalculator (){
+    public int interactiveCalculator() {
         Scanner theScanner = new Scanner(System.in);
 
         System.out.println("Welcome to the calculator");
@@ -71,7 +74,7 @@ public class Challenges {
 
         int result;
 
-        switch(userSelection){
+        switch (userSelection) {
             case 1:
                 result = this.addTwoNumbers();
 
@@ -92,6 +95,7 @@ public class Challenges {
         }
         return result;
     }
+
     public String coinFlip() {
 
         //attempt to flip a coin
@@ -107,10 +111,10 @@ public class Challenges {
         }
     }
 
-    public String findTheBiggestNumber(){
+    public String findTheBiggestNumber() {
 
         //this is the scanner that lets us take input from the user
-        Scanner theScanner  = new Scanner(System.in);
+        Scanner theScanner = new Scanner(System.in);
 
         //this is where we ask the user for input
         System.out.print("Give me the first number please:");
@@ -128,10 +132,10 @@ public class Challenges {
 
     }
 
-    public String findSmallestNumber(){
+    public String findSmallestNumber() {
 
         //reference the above method to make one that finds the smaller two numbers
-        Scanner theScanner  = new Scanner(System.in);
+        Scanner theScanner = new Scanner(System.in);
         System.out.println("give me the first number");
         int firstNumber = theScanner.nextInt();
         System.out.println("give me the second number");
@@ -160,9 +164,75 @@ public class Challenges {
 
         return "the difference between " + firstNumber + " and " + secondNumber + "is: " + theAnswer;
     }
+//
+//    public void countToTen() {
+//
+//        for (int i = 1; i <= 10; i++) {
+//            //run some code
+//            System.out.println(i);
+//        }
+//        int i = 1;
+//        while(i <= 10){
+//            System.out.println(i);
+//            i++;
+//
+//    }
+////
+//    }
+////    //make a method that counts from 10 to 1
+//    public void countDownFrom10() {
+//
+//        for (int i = 10; i >= 1; i--) {
+//            //run some code
+//            System.out.println(i);
+//        }
+//
+//    }
+////
+////    //make a method that counts from 1 through 100 in increments of 2
+//    public void countToHundredInIncrementsOfTwo() {
+//
+//        for (int i = 1; i <= 100; i += 2) {
+//            //run some code
+//            System.out.println(i);
+//        }
+//
+//    }
 
 
+
+    //make a method that counts from 0 - 50 but only prints even numbers
+
+    public void countToFiftyOnlyEvens() {
+
+        for (int i = 0; i <= 50; i += 2) {
+            //run some code
+            System.out.println(i);
+        }
+
+        int i = 0;
+        while(i <= 50){
+
+            //hey code, is i even
+            if(i % 2 != 0){
+                System.out.println(i);
+            }
+
+            i++;
+        }
+
+        for(int i=0; i <= 50; i++){
+
+            if(i % 2 != 0){
+                System.out.println(i);
+            }
+
+        }
 
     }
+    }
+
+}
+
 
 

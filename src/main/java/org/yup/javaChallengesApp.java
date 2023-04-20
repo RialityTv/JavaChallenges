@@ -34,9 +34,14 @@ public class javaChallengesApp {
 //
 //        System.out.println(challenges.findTheBiggestNumber());
 
-        System.out.println(challenges.findSmallestNumber());
+//        System.out.println(challenges.findSmallestNumber());
+//
+//        System.out.println(challenges.findTheDifferenceBetweenTwoNumbers());
 
-        System.out.println(challenges.findTheDifferenceBetweenTwoNumbers());
+//        challenges.countToTen();
+//        challenges.countDownFrom10();
+//        challenges.countToHundredInIncrementsOfTwo();
+          challenges.countToFiftyOnlyEvens();
     }
 }
 
